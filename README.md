@@ -92,4 +92,4 @@ Timestamp,         User_ID,    Username,  Chat_ID,  Chat_Title, Message,        
 
 ### Контактные данные
 
-- **Telegram**: [https://t.me/eralyf]
+- **Telegram**: [EralyF](https://t.me/eralyf)
