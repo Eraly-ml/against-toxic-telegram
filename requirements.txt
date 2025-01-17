@@ -1,0 +1,5 @@
+python-telegram-bot==20.3
+python-dotenv==1.0.0
+detoxify
+torch  # Для работы Detoxify
+nest-asyncio==1.5.8
