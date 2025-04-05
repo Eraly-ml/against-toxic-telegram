@@ -1,6 +1,6 @@
 services:
   app:
-    image: gavrilovegor519/against-toxic-telegram
+    image: against-toxic-telegram
     build: .
     environment:
       - TELEGRAM_TOKEN=${TELEGRAM_TOKEN}
