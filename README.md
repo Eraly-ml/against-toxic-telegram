@@ -88,7 +88,7 @@ The bot listens for new messages in Telegram groups. When a message arrives:
 against-toxic-bot/
 ├── .gitignore # Exceptions for Git
 ├── Dockerfile # Instructions for building a Docker image
-├── LICENSE # Project license (MIT, CC-BY, etc.)
+├── LICENSE # Project license 
 ├── README.md # Project documentation
 ├── compose.yml # Docker Compose configuration
 ├── notoxicbot.ipynb # Jupyter Notebook (possibly for prototyping/debugging)
