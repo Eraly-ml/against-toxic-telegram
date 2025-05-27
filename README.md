@@ -91,7 +91,7 @@ against-toxic-bot/
 ├── LICENSE # Project license (MIT, CC-BY, etc.)
 ├── README.md # Project documentation
 ├── compose.yml # Docker Compose configuration
-├── notoxicbot. ipynb # Jupyter Notebook (possibly for prototyping/debugging)
+├── notoxicbot.ipynb # Jupyter Notebook (possibly for prototyping/debugging)
 ├── requirements.txt # Python dependencies
 ├── runtime.txt # Environment version (usually used in Heroku)
 └── script.py # Main script or bot logic
