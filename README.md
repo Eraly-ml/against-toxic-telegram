@@ -1,7 +1,3 @@
-Отлично, я перенесу стиль из README Open WebUI в ваш проект. Вот адаптированная версия README для вашего Telegram-бота **Against Toxic** в аналогичном стиле:
-
----
-
 # Against Toxic Telegram Bot 🤖
 
 ![GitHub stars](https://img.shields.io/github/stars/Eraly-ml/against-toxic-bot?style=social)
