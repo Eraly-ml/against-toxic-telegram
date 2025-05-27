@@ -1,12 +1,12 @@
 # Against Toxic Telegram Bot 🤖
 
-![GitHub stars](https://img.shields.io/github/stars/Eraly-ml/against-toxic-bot?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Eraly-ml/against-toxic-bot?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/Eraly-ml/against-toxic-bot?style=social)
-![GitHub repo size](https://img.shields.io/github/repo-size/Eraly-ml/against-toxic-bot)
-![GitHub language count](https://img.shields.io/github/languages/count/Eraly-ml/against-toxic-bot)
-![GitHub top language](https://img.shields.io/github/languages/top/Eraly-ml/against-toxic-bot)
-![GitHub last commit](https://img.shields.io/github/last-commit/Eraly-ml/against-toxic-bot?color=red)
+![GitHub stars](https://img.shields.io/github/stars/Eraly-ml/against-toxic-telegram?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Eraly-ml/against-toxic-telegram?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/Eraly-ml/against-toxic-telegram?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/Eraly-ml/against-toxic-telegram)
+![GitHub language count](https://img.shields.io/github/languages/count/Eraly-ml/against-toxic-telegram)
+![GitHub top language](https://img.shields.io/github/languages/top/Eraly-ml/against-toxic-telegram)
+![GitHub last commit](https://img.shields.io/github/last-commit/Eraly-ml/against-toxic-telegram?color=red)
 
 **Against Toxic** is a simple but powerful Telegram bot that **automatically detects and removes toxic messages** from group chats. It helps you keep your community clean and respectful using machine learning.
 
@@ -47,7 +47,7 @@
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Eraly-ml/against-toxic-bot.git
+   git clone https://github.com/Eraly-ml/against-toxic-telegram.git
    cd against-toxic-bot
    ```
 
