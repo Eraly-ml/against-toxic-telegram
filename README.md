@@ -71,8 +71,6 @@
    python bot.py
    ```
 
----
-
 ##  How It Works
 
 The bot listens for new messages in Telegram groups. When a message arrives:
@@ -120,13 +118,11 @@ john_doe, "You're such an idiot!", 0.92
 
 Pull requests are welcome! If you want to improve detection, add features, or fix bugs — feel free to contribute.
 
----
 
 ##  License
 
 MIT License © [Eraly](https://github.com/Eraly-ml)
 
----
 
 ##  Support
 
