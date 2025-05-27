@@ -130,4 +130,4 @@ Apache 2.0 License © [Eraly](https://github.com/Eraly-ml)
 
 ##  Support
 
-If you need help or have questions, feel free to open an [issue](https://github.com/Eraly-ml/against-toxic-bot/issues) or reach out via Telegram.
+If you need help or have questions, feel free to open an [issue](https://github.com/Eraly-ml/against-toxic-telegram/issues) or reach out via Telegram.
