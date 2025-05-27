@@ -15,18 +15,18 @@
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-* 🧠 **Toxicity Detection with Detoxify**
+*  **Toxicity Detection with Detoxify**
   Uses the powerful Detoxify model to analyze messages for toxicity.
 
-* ❌ **Auto-deletion of Toxic Messages**
+*  **Auto-deletion of Toxic Messages**
   Immediately deletes messages containing insults, hate, threats, or obscene language.
 
-* ⚠️ **Warning System**
+*  **Warning System**
   Notifies group members about deleted messages and the reason behind the removal.
 
-* 📊 **Logging**
+*  **Logging**
   Saves details of toxic messages (user, message, toxicity scores) to a CSV file for moderation analytics.
 
 * 💬 **Multi-language Support** *(coming soon)*
@@ -34,15 +34,15 @@
 
 ---
 
-## 🛠️ Installation
+##  Installation
 
-### 🔌 Requirements
+###  Requirements
 
 * Python 3.8+
 * Telegram Bot Token from [@BotFather](https://t.me/BotFather)
 * `pip install -r requirements.txt`
 
-### 🚀 Quickstart
+###  Quickstart
 
 1. **Clone the repository:**
 
@@ -73,7 +73,7 @@
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 The bot listens for new messages in Telegram groups. When a message arrives:
 
@@ -84,7 +84,7 @@ The bot listens for new messages in Telegram groups. When a message arrives:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 against-toxic-bot/
@@ -97,7 +97,7 @@ against-toxic-bot/
 
 ---
 
-## 📈 Example
+##  Example
 
 A user sends:
 
@@ -105,7 +105,7 @@ A user sends:
 
 Bot detects high toxicity and deletes the message, then posts:
 
-> 🚫 Message deleted due to toxic language.
+>  Message deleted due to toxic language.
 
 And logs:
 
@@ -116,7 +116,7 @@ john_doe, "You're such an idiot!", 0.92
 
 ---
 
-## 🙌 Contributing
+##  Contributing
 
 Pull requests are welcome! If you want to improve detection, add features, or fix bugs — feel free to contribute.
 
@@ -128,6 +128,6 @@ MIT License © [Eraly](https://github.com/Eraly-ml)
 
 ---
 
-## 💬 Support
+##  Support
 
 If you need help or have questions, feel free to open an [issue](https://github.com/Eraly-ml/against-toxic-bot/issues) or reach out via Telegram.
