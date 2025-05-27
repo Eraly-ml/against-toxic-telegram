@@ -1,4 +1,4 @@
-# Against Toxic Telegram Bot 🤖
+# Against Toxic Telegram Bot 
 
 ![GitHub stars](https://img.shields.io/github/stars/Eraly-ml/against-toxic-telegram?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Eraly-ml/against-toxic-telegram?style=social)
@@ -29,7 +29,7 @@
 *  **Logging**
   Saves details of toxic messages (user, message, toxicity scores) to a CSV file for moderation analytics.
 
-* 💬 **Multi-language Support** *(coming soon)*
+*  **Multi-language Support** *(coming soon)*
   Extendable for multilingual toxicity detection.
 
 ---
@@ -122,7 +122,7 @@ Pull requests are welcome! If you want to improve detection, add features, or fi
 
 ---
 
-## 📃 License
+##  License
 
 MIT License © [Eraly](https://github.com/Eraly-ml)
 
