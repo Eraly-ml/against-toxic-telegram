@@ -86,11 +86,15 @@ The bot listens for new messages in Telegram groups. When a message arrives:
 
 ```
 against-toxic-bot/
-├── bot.py             # Main bot logic
-├── detector.py        # Toxicity detection (Detoxify wrapper)
-├── logger.py          # CSV logger for moderation
-├── requirements.txt   # Dependencies
-└── README.md          # This file
+├── .gitignore # Exceptions for Git
+├── Dockerfile # Instructions for building a Docker image
+├── LICENSE # Project license (MIT, CC-BY, etc.)
+├── README.md # Project documentation
+├── compose.yml # Docker Compose configuration
+├── notoxicbot. ipynb # Jupyter Notebook (possibly for prototyping/debugging)
+├── requirements.txt # Python dependencies
+├── runtime.txt # Environment version (usually used in Heroku)
+└── script.py # Main script or bot logic
 ```
 
 ---
@@ -121,7 +125,7 @@ Pull requests are welcome! If you want to improve detection, add features, or fi
 
 ##  License
 
-MIT License © [Eraly](https://github.com/Eraly-ml)
+Apache 2.0 License © [Eraly](https://github.com/Eraly-ml)
 
 
 ##  Support
