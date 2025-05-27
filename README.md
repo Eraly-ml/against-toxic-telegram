@@ -1,95 +1,137 @@
-
-# Against Toxic Telegram Bot
-
-## Описание
-
-**Against Toxic Telegram Bot** — это Telegram-бот, предназначенный для автоматического анализа и удаления токсичных сообщений в группах и каналах. Он использует модель **Detoxify** для определения токсичности текста и автоматически удаляет сообщения, которые содержат токсичные выражения. Бот также отправляет предупреждения о токсичности в чат и записывает информацию о токсичных сообщениях в CSV-файл.
+Отлично, я перенесу стиль из README Open WebUI в ваш проект. Вот адаптированная версия README для вашего Telegram-бота **Against Toxic** в аналогичном стиле:
 
 ---
 
-## Основные функции
+# Against Toxic Telegram Bot 🤖
 
-- **Удаление токсичных сообщений**: Бот анализирует все входящие сообщения в чате и удаляет те, которые содержат токсичные выражения, такие как оскорбления, угрозы, расизм и другие виды ненависти.
-- **Предупреждения о токсичности**: В случае удаления токсичного сообщения, бот отправляет предупреждение в чат с указанием категорий токсичности.
-- **Логирование**: Все токсичные сообщения и их характеристики записываются в CSV-файл для дальнейшего анализа и мониторинга.
-- **Улучшение атмосферы общения**: Этот бот помогает поддерживать позитивную атмосферу в чате, предотвращая распространение токсичного контента.
+![GitHub stars](https://img.shields.io/github/stars/Eraly-ml/against-toxic-bot?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Eraly-ml/against-toxic-bot?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/Eraly-ml/against-toxic-bot?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/Eraly-ml/against-toxic-bot)
+![GitHub language count](https://img.shields.io/github/languages/count/Eraly-ml/against-toxic-bot)
+![GitHub top language](https://img.shields.io/github/languages/top/Eraly-ml/against-toxic-bot)
+![GitHub last commit](https://img.shields.io/github/last-commit/Eraly-ml/against-toxic-bot?color=red)
+
+**Against Toxic** is a simple but powerful Telegram bot that **automatically detects and removes toxic messages** from group chats. It helps you keep your community clean and respectful using machine learning.
+
+> \[!TIP]
+> Want to protect your community from hate speech, insults, and toxic behavior? Deploy **Against Toxic** in minutes and moderate with confidence!
 
 ---
 
-## Требования
+## ✨ Key Features
 
-Для работы бота необходимо установить следующие библиотеки:
+* 🧠 **Toxicity Detection with Detoxify**
+  Uses the powerful Detoxify model to analyze messages for toxicity.
 
-```bash
-pip install -r requirements.txt
+* ❌ **Auto-deletion of Toxic Messages**
+  Immediately deletes messages containing insults, hate, threats, or obscene language.
+
+* ⚠️ **Warning System**
+  Notifies group members about deleted messages and the reason behind the removal.
+
+* 📊 **Logging**
+  Saves details of toxic messages (user, message, toxicity scores) to a CSV file for moderation analytics.
+
+* 💬 **Multi-language Support** *(coming soon)*
+  Extendable for multilingual toxicity detection.
+
+---
+
+## 🛠️ Installation
+
+### 🔌 Requirements
+
+* Python 3.8+
+* Telegram Bot Token from [@BotFather](https://t.me/BotFather)
+* `pip install -r requirements.txt`
+
+### 🚀 Quickstart
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Eraly-ml/against-toxic-bot.git
+   cd against-toxic-bot
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set your bot token:**
+
+   Create a `.env` file or export an environment variable:
+
+   ```env
+   TELEGRAM_TOKEN=your_bot_token_here
+   ```
+
+4. **Run the bot:**
+
+   ```bash
+   python bot.py
+   ```
+
+---
+
+## ⚙️ How It Works
+
+The bot listens for new messages in Telegram groups. When a message arrives:
+
+1. It passes the message text to the `Detoxify` model.
+2. If the message is flagged as toxic (above a configurable threshold), it is deleted.
+3. A warning message is posted in the group.
+4. The message content and toxicity scores are logged.
+
+---
+
+## 📂 Project Structure
+
+```
+against-toxic-bot/
+├── bot.py             # Main bot logic
+├── detector.py        # Toxicity detection (Detoxify wrapper)
+├── logger.py          # CSV logger for moderation
+├── requirements.txt   # Dependencies
+└── README.md          # This file
 ```
 
-### Зависимости
-
-- `python-telegram-bot==20.3`: Для работы с Telegram API.
-- `python-dotenv==1.0.0`: Для загрузки конфиденциальных данных из файла `.env`.
-- `detoxify==0.7.0`: Для анализа токсичности сообщений.
-- `torch==2.0.1`: Для работы Detoxify, так как эта библиотека использует PyTorch.
-- `nest-asyncio==1.5.8`: Для поддержки вложенных циклов asyncio.
-
 ---
 
-## Настройка
+## 📈 Example
 
-1. Создайте файл `.env` в корне проекта и добавьте ваш токен Telegram-бота:
+A user sends:
 
-    ```text
-    TELEGRAM_TOKEN=your_telegram_bot_token
-    ```
+> "You're such an idiot!"
 
-2. Добавьте бота в ваш Telegram-чат (группу или канал).
-3. Убедитесь, что у бота есть права на удаление сообщений в чате.
+Bot detects high toxicity and deletes the message, then posts:
 
----
+> 🚫 Message deleted due to toxic language.
 
-## Как запустить
+And logs:
 
-1. Скачайте или клонируйте репозиторий на свой компьютер.
-2. Установите все зависимости с помощью команды:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Запустите бота:
-
-    ```bash
-    python bot.py
-    ```
-
-4. Убедитесь, что токен правильно загружается из файла `.env`.
-
----
-
-## Как использовать
-
-1. После запуска бота добавьте его в вашу группу или канал.
-2. Убедитесь, что у бота есть права на удаление сообщений.
-3. Бот начнёт автоматически анализировать входящие текстовые сообщения на токсичность.
-4. Если сообщение окажется токсичным, оно будет удалено, а в чат будет отправлено предупреждение о токсичности.
-
----
-
-## Логирование
-
-Все токсичные сообщения записываются в файл `bot_logs.csv`. Пример строки лога:
-
-```csv
-Timestamp,         User_ID,    Username,  Chat_ID,  Chat_Title, Message,                   Action,    Toxic_Categories
-2025-01-18 12:34:56, 123456789, username, 987654321, Test Chat, "Это ужасное сообщение!", Deleted, toxicity, insult
+```
+Username, Message, Toxicity Score
+john_doe, "You're such an idiot!", 0.92
 ```
 
 ---
 
-## Поддержка
+## 🙌 Contributing
 
-Для любых вопросов или проблем с настройкой бота создайте **issue** на GitHub, и я постараюсь вам помочь.
+Pull requests are welcome! If you want to improve detection, add features, or fix bugs — feel free to contribute.
 
-### Контактные данные
+---
 
-- **Telegram**: [EralyF](https://t.me/eralyf)
+## 📃 License
+
+MIT License © [Eraly](https://github.com/Eraly-ml)
+
+---
+
+## 💬 Support
+
+If you need help or have questions, feel free to open an [issue](https://github.com/Eraly-ml/against-toxic-bot/issues) or reach out via Telegram.
