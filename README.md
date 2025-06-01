@@ -51,13 +51,21 @@
    cd against-toxic-bot
    ```
 
-2. **Install dependencies:**
+#### Docker
+
+```bash
+docker compose up -d
+```
+
+#### Manual
+
+1. **Install dependencies:**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Set your bot token:**
+2. **Set your bot token:**
 
    Create a `.env` file or export an environment variable:
 
@@ -65,7 +73,7 @@
    TELEGRAM_TOKEN=your_bot_token_here
    ```
 
-4. **Run the bot:**
+3. **Run the bot:**
 
    ```bash
    python bot.py
