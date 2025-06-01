@@ -44,7 +44,7 @@
 
 ###  Quickstart
 
-1. **Clone the repository:**
+**Clone the repository:**
 
    ```bash
    git clone https://github.com/Eraly-ml/against-toxic-telegram.git
